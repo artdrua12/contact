@@ -1,0 +1,100 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url(../images/89.jpg);
+}
+
+section,
+main {
+    flex-basis: 53%;
+    background-image: url(../images/84.jpg);
+    border: red solid 1px;
+    flex-grow: 1;
+    justify-content: center;
+    align-self: stretch;
+    /*height: 100%*/
+}
+
+section {
+    flex-basis: 5%;
+}
+
+section div {
+    flex-basis: 100%;
+}
+
+.button {
+    margin: 2%;
+    font-size: 2rem;
+    color: red;
+    background-color: yellow;
+    flex-basis: 90%;
+    flex-grow: 1;
+    min-width: 150px;
+    min-height: 100px;
+    background-image: url(../images/82.jpg);
+    border-radius: 10px;
+}
+
+
+/* для окошечек---------------*/
+
+.modal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flexChild,
+.divImg,
+.divInside {
+    border: solid red 2px;
+    flex-basis: 15%;
+    flex-grow: 1;
+    margin: 3px;
+}
+
+.formLegend {
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 2rem;
+}
+
+.formInput {
+    flex-grow: 2;
+    flex-shrink: 2;
+    font-size: 2rem;
+}
+
+.formdiv {
+    flex-basis: 49%;
+    flex-grow: 1;
+    flex-shrink: 2;
+    min-width: 250px;
+}
+
+.divImg {
+    flex-basis: 100%;
+    height: 120px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.divInside {
+    flex-basis: 42%;
+    border: none;
+}
+
+#modal {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    display: none;
+}
